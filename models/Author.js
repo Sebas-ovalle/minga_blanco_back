@@ -18,7 +18,7 @@ let colection = "authors"
 
 let Author = model(schema, collection)
 
-export default authors
+export default Authors
 
 export let authors = [{
     name: "alejandro",
