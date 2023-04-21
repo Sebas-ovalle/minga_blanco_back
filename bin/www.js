@@ -5,18 +5,18 @@
  */
 
 // var app = require('../app');
-// var debug = require('debug')('minga-46-back:server');
-// var http = require('http');
 import app from '../app.js'
 import http from 'http'
 import logger from 'debug'
-const debug = logger('minga-46-back:server')
+const debug = logger('minga-blanco-back:server')
+// var debug = require('debug')('minga-blanco-back:server');
+
 
 /**
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || '8080');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
@@ -29,7 +29,7 @@ const server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port, () => console.log('Server ready on port: ' + port));
+server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
