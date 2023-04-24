@@ -16,7 +16,7 @@ let read = async(req, res, next) => {
     console.log(error);
     return res.status(400)
       .json({
-        error: "ocurrió un erro wachin!"
+        error: "ocurrió un error!"
       })
   }
 }
